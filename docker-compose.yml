@@ -1,0 +1,10 @@
+﻿services:
+  takealittle.api:
+    image: takealittle.api
+    build:
+      context: .
+      dockerfile: src/Takealittle.Api/Dockerfile
+    ports:
+      - 5150:80
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
